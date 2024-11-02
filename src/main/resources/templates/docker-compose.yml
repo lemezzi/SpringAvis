@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  smtp4dev:
+    image: rnwood/smtp4dev:latest
+    ports:
+      - "5000:80"  # Port HTTP pour l'interface web
+      - "25:25"    # Port SMTP pour recevoir des e-mails
+    volumes:
+      - smtp4dev-data:/data  # Volume pour stocker les données
+
+volumes:
+  smtp4dev-data:

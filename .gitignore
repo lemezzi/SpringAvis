@@ -1,0 +1,20 @@
+# Directories
+target/
+out/
+.idea/
+.vscode/
+node_modules/
+dist/
+
+# Files
+*.log
+*.tmp
+*.jar
+*.war
+*.class
+*.iml
+
+# Sensitive files
+application.properties
+application.yml
+.env
